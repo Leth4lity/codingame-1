@@ -1,0 +1,1 @@
+using System;using System.Linq;class a{static void Main(){int[]i=Console.ReadLine().Split(' ').Select(n=>int.Parse(n)).ToArray();for(int x=i[0],y=i[1],X=i[2],Y=i[3];;){string a="";if(Y<y){a="S";Y++;}if(X>x){a+="W";X--;}if(X<x){a+="E";X++;}Console.WriteLine(a);}}}

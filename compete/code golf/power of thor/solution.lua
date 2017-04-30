@@ -1,0 +1,1 @@
+x,y,X,Y=io.read('n','n','n','n')while 1 do d=''if Y<y then d='S'Y=Y+1 end if X>x then d=d..'W'X=X-1 elseif X<x then d=d..'E'X=X+1 end print(d)end

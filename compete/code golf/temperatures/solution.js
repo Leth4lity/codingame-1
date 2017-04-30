@@ -1,0 +1,1 @@
+readline(),print(readline(z=x=>x<0?-x:+x).split` `.sort((a,b)=>a==0?1:z(a)==z(b)&&a<0?1:z(a)>z(b)?1:-1)[0]|0)
