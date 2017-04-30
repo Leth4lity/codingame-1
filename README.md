@@ -1,6 +1,6 @@
 # CodinGame
 
-## Compete
+## Multiplayer
 
 ### Bot Programming
 
@@ -63,6 +63,38 @@
   - [x] Python
   - [ ] Python3
   - [x] Ruby
+  - [ ] Rust
+  - [ ] Scala
+  - [ ] Swift
+  - [ ] Swift3
+  - [ ] VB.NET
+</details>
+
+### Contests
+
+<details><summary>Coders of the Caribbean</summary>
+
+  - [ ] Bash
+  - [ ] C
+  - [ ] C#
+  - [ ] C++
+  - [ ] Clojure
+  - [ ] Dart
+  - [ ] F#
+  - [ ] Go
+  - [ ] Groovy
+  - [ ] Haskell
+  - [ ] Java
+  - [x] JavaScript
+  - [ ] Lua
+  - [ ] OCaml
+  - [ ] ObjectiveC
+  - [ ] PHP
+  - [ ] Pascal
+  - [ ] Perl
+  - [ ] Python
+  - [ ] Python3
+  - [ ] Ruby
   - [ ] Rust
   - [ ] Scala
   - [ ] Swift
