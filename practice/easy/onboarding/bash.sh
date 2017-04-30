@@ -1,9 +1,3 @@
-# CodinGame planet is being attacked by slimy insectoid aliens.
-# <---
-# Hint:To protect the planet, you can implement the pseudo-code provided in the statement, below the player.
-
-
-# game loop
 while true; do
     # enemy1: name of enemy 1
     read enemy1
@@ -14,11 +8,6 @@ while true; do
     # dist2: distance to enemy 2
     read dist2
 
-    # Write an action using echo
-    # To debug: echo "Debug messages..." >&2
-
-
-    # You have to output a correct ship name to shoot ("Buzz", enemy1, enemy2, ...)
     if [ $dist1 -lt $dist2 ]
     then
         echo $enemy1

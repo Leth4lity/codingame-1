@@ -1,8 +1,3 @@
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
-
 var L = parseInt(readline())
 var H = parseInt(readline())
 var T = readline().toUpperCase()
