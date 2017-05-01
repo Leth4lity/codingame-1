@@ -1,20 +1,18 @@
-var N = +readline(); // Number of elements which make up the association table.
-var Q = +readline(); // Number Q of file names to be analyzed.
-var T = new Map()
+const amount = readline()
+const fileNames = readline()
 
-for (var i = 0; i < N; i++) {
-    var inputs = readline().split(' ');
-    var EXT = inputs[0].toLowerCase(); // file extension
-    var MT = inputs[1]; // MIME type.
-    T.set(EXT, MT)
+const types = new Map()
+
+for (let i = 0; i < amount; i++) {
+    const [extension, mime] = readline().split` `
+    types.set(extension.toLowerCase(), mime)
 }
 
-for (var i = 0; i < Q; i++) {
-    var FN = readline().toLowerCase(); // One file name per line.
-    
-    if (FN.indexOf('.') > -1) {
-        var n = FN.split('.')
-        var e = n[n.length - 1]
-        print((T.has(e)) ? T.get(e) : 'UNKNOWN')
-    } else print('UNKNOWN')
+for (let i = 0; i < fileNames; i++) {
+    let fileName = readline().toLowerCase()
+    if (fileName.indexOf`.` > -1) {
+        const e = fileName.split`.`
+        const t = e[e.length - 1]
+        print(types.has(t) ? types.get(t) : `UNKNOWN`)
+    } else print`UNKNOWN`
 }

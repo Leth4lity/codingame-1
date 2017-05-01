@@ -1,9 +1,12 @@
-let mountainH = []
+let mountain = []
 
 while (true) {
     for (let i = 0; i < 8; i++) {
-        mountainH[i] = parseInt(readline()); // represents the height of one mountain.
+        // get height of each mountain
+        mountain[i] = readline()
     }
     
-    print(mountainH.reduce((highest, element, index, arr) => element > arr[highest] ? index : highest, 0))
+    // 1. sort heights from highest to lowest
+    // 2. print index of highest value
+    print(mountain.reduce((highest, element, index, arr) => element > arr[highest] ? index : highest, 0))
 }

@@ -1,58 +1,24 @@
-var L = parseInt(readline())
-var H = parseInt(readline())
-var T = readline().toUpperCase()
-var N = T.length
+const width = readline()
+const height = readline()
+const text = readline().split``
 
-var ASCII={
-    A:[],
-    B:[],
-    C:[],
-    D:[],
-    E:[],
-    F:[],
-    G:[],
-    H:[],
-    I:[],
-    J:[],
-    K:[],
-    L:[],
-    M:[],
-    N:[],
-    O:[],
-    P:[],
-    Q:[],
-    R:[],
-    S:[],
-    T:[],
-    U:[],
-    V:[],
-    W:[],
-    X:[],
-    Y:[],
-    Z:[],
-    '?':[]
-}
+let output = ''
 
-for (var i = 0; i < H; i++) {
-    var ROW = readline()
-    var index = 0
+for (let i = 0; i < height; i++) {
+    const row = readline()
     
-    for (var letter in ASCII) {
-        ASCII[letter][i] = ROW.substr(index, L)
-        index += L
-    }
-}
-
-var output = ''
-
-for (var i = 0; i < H; i++) {
-    for (var letter = 0; letter < N; letter++) {
-        var char = T.charAt(letter)
-        
-        if (char < 'A' || char > 'Z') char = '?'
-        
-        output += ASCII[char][i]
-    }
+    text.forEach(character => {
+        // 1. Convert character into a base36 number (see Base36) & subtract 9
+        //    e.g E becomes 14 - 9
+        // 2. Replace non a-zA-Z with '27'
+        // 3. Subtract 1 & times by character width
+        // 4. Use above as the start location and character width as number of
+        //    characters to extract from row
+        // 5. Merge with previous character
+        output += row.substr(((parseInt(character, 36) - 9 || 27) - 1) * width, width)
+    })
+    
+    // Begin next row
     output += '\n'
 }
 
