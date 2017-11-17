@@ -1,9 +1,9 @@
 while true do
-    enemy1 = io.read() -- name of enemy 1
-    dist1 = tonumber(io.read()) -- distance to enemy 1
-    enemy2 = io.read() -- name of enemy 2
-    dist2 = tonumber(io.read()) -- distance to enemy 2
-    
+    enemy1 = io.read()
+    dist1 = tonumber(io.read())
+    enemy2 = io.read()
+    dist2 = tonumber(io.read())
+
     if dist1 < dist2 then
         print(enemy1)
     else
