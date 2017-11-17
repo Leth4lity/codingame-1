@@ -6,10 +6,10 @@ public struct StderrOutputStream: OutputStreamType {
 public var errStream = StderrOutputStream()
 
 while true {
-    let enemy1 = readLine()! // name of enemy 1
-    let dist1 = Int(readLine()!)! // distance to enemy 1
-    let enemy2 = readLine()! // name of enemy 2
-    let dist2 = Int(readLine()!)! // distance to enemy 2
+    let enemy1 = readLine()!
+    let dist1 = Int(readLine()!)!
+    let enemy2 = readLine()!
+    let dist2 = Int(readLine()!)!
 
     if dist1 < dist2 {
         print(enemy1)
