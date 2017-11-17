@@ -2,10 +2,10 @@ import sys
 import math
 
 while True:
-    enemy_1 = raw_input()  # name of enemy 1
-    dist_1 = int(raw_input())  # distance to enemy 1
-    enemy_2 = raw_input()  # name of enemy 2
-    dist_2 = int(raw_input())  # distance to enemy 2
+    enemy_1 = raw_input()
+    dist_1 = int(raw_input())
+    enemy_2 = raw_input()
+    dist_2 = int(raw_input())
 
     if dist_1 < dist_2:
         print enemy_1
