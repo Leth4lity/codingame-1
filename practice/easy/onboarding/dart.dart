@@ -4,10 +4,10 @@ import 'dart:math';
 void main() {
 
     while (true) {
-        String enemy1 = stdin.readLineSync(); // name of enemy 1
-        int dist1 = int.parse(stdin.readLineSync()); // distance to enemy 1
-        String enemy2 = stdin.readLineSync(); // name of enemy 2
-        int dist2 = int.parse(stdin.readLineSync()); // distance to enemy 2
+        String enemy1 = stdin.readLineSync();
+        int dist1 = int.parse(stdin.readLineSync());
+        String enemy2 = stdin.readLineSync();
+        int dist2 = int.parse(stdin.readLineSync());
 
         if (dist1 < dist2) print(enemy1);
         else print(enemy2);
